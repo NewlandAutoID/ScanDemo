@@ -1,3 +1,4 @@
+**简体中文 | [English](./README_en-us.md)**<br>
 # ScanDemo说明
 
 [TOC]
