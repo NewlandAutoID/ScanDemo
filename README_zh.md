@@ -12,7 +12,7 @@
 
 > 该用例为简单的读码API应用使用说明
 
-一、注册监听解码数据广播	
+## 一、注册监听解码数据广播	
 
 ```java
 /*
@@ -52,7 +52,7 @@
         // End Scanner Result
 ```
 
-二、配置读码参数
+## 二、配置读码参数
 
 ```java
 /*
@@ -69,7 +69,7 @@ sendBroadcast(intent);
 
 > 可根据配置自行调整设置参数
 
-三、启动读码
+## 三、启动读码
 
 ```java
 /*
@@ -83,7 +83,7 @@ intentstart.putExtra("SCAN_TIMEOUT", 9);
 mContext.sendBroadcast(intentstart);
 ```
 
-四、停止读码
+## 四、停止读码
 
 ```java
 /*

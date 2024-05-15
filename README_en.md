@@ -10,9 +10,9 @@
 |            |             |
 |            |             |
 
-> 该用例为简单的读码API应用使用说明
+> This ScanDemo can guide you to use Newland Scanner APl mentioned in the Newland Android PDA APl Handbook
 
-一、注册监听解码数据广播	
+## 1、Register broadcast receiver of scanning
 
 ```java
 /*
@@ -52,7 +52,7 @@
         // End Scanner Result
 ```
 
-二、配置读码参数
+## 2、Config scanning
 
 ```java
 /*
@@ -67,9 +67,9 @@ sendBroadcast(intent);
 // End Scanner Config
 ```
 
-> 可根据配置自行调整设置参数
+> Config scanner parameters according to practica needs
 
-三、启动读码
+## 3、Start scanning
 
 ```java
 /*
@@ -83,7 +83,7 @@ intentstart.putExtra("SCAN_TIMEOUT", 9);
 mContext.sendBroadcast(intentstart);
 ```
 
-四、停止读码
+## 4、Stop scanning
 
 ```java
 /*
