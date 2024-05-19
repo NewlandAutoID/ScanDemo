@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        config {
+            storeFile file('newland.jks')
+            storePassword '123456'
+            keyAlias 'newland'
+            keyPassword '123456'
+        }
+    }
     namespace 'com.nlscan.scandemo'
     compileSdk 34
 
@@ -18,8 +26,12 @@ android {
 
     buildTypes {
         release {
+   	    signingConfig signingConfigs.config
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {

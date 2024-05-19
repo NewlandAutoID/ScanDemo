@@ -1,19 +1,20 @@
-**[简体中文](./README.md) | English**<br>
+**简体中文 | [English](./README.md)**<br>
+
 # ScanDemo说明
 
 [TOC]
 
 ------
 
-| 日期       | 说明        |
-| ---------- | ----------- |
-| 2024-05-15 | Init Commit |
-|            |             |
-|            |             |
+| 日期       | 说明     |
+| ---------- | -------- |
+| 2024-05-15 | 首次提交 |
+|            |          |
+|            |          |
 
-> This ScanDemo can guide you to use Newland Scanner APl mentioned in the Newland Android PDA APl Handbook
+> 该用例为简单的读码API应用使用说明
 
-## 1、Register broadcast receiver of scanning
+## 一、注册监听解码数据广播	
 
 ```java
 /*
@@ -53,7 +54,7 @@
         // End Scanner Result
 ```
 
-## 2、Config scanning
+## 二、配置读码参数
 
 ```java
 /*
@@ -68,9 +69,9 @@ sendBroadcast(intent);
 // End Scanner Config
 ```
 
-> Config scanner parameters according to practica needs
+> 可根据配置自行调整设置参数
 
-## 3、Start scanning
+## 三、启动读码
 
 ```java
 /*
@@ -84,7 +85,7 @@ intentstart.putExtra("SCAN_TIMEOUT", 9);
 mContext.sendBroadcast(intentstart);
 ```
 
-## 4、Stop scanning
+## 四、停止读码
 
 ```java
 /*
